@@ -1,7 +1,7 @@
 const countdown = document.querySelector('.countdown');
 
 // Set Launch Date (ms)
-const launchDate = new Date('Jan 1, 2023 13:00:00').getTime();
+const launchDate = new Date('Jan 1, 2023 00:00:00').getTime();
 
 //Update every second
 const intvl = setInterval(() => {
@@ -11,7 +11,7 @@ const intvl = setInterval(() => {
     //Distance from now to the launch date
     const distance = launchDate - now;
 
-    //Time calaculations
+    //Time calculations
     const days = Math.floor(distance / (1000 * 60 * 60 * 24));
     const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const mins = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
